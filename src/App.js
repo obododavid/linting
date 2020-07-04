@@ -1,7 +1,6 @@
-import React from 'react';
-// import { Counter } from './features/counter/Counter';
-import TodoWithStatusObject from './components/todo/TodoWithStatus-object';
-import TodoWithStatusArray from './components/todo/TodoWithStatus-array';
+import React from "react";
+import TodoWithStatusObject from "./components/todo/TodoWithStatus-object";
+import TodoWithStatusArray from "./components/todo/TodoWithStatus-array";
 
 const App = () => {
 	return (
