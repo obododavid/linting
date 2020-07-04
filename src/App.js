@@ -1,58 +1,70 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React, { useState } from 'react';
+// import { Counter } from './features/counter/Counter';
+import TodoWithStatusObject from './components/todo/TodoWithStatus-object';
+import TodoWithStatusArray from './components/todo/TodoWithStatus-array';
+import ClassTodoWithoutStatusArray from './components/todo/ClassTodoWithoutStatus-array';
+import Counter from './components/Counter';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div>
+      <TodoWithStatusObject />
+      <TodoWithStatusArray />
     </div>
-  );
+  )
 }
+
+// function increaseScore(state, props) {
+//   return { score: state.score + 1 }
+// }
+
+// class user {
+//   handleIncreaseScore() {
+//     this.setState(increaseScore)
+//   }
+// }
+
+
+// class App extends React.Component {
+//   constructor() {
+//     super()
+//     this.state = {
+//       valueOne: 1,
+//       valueTwo: 2,
+//       valueThree: ''
+//     }
+//   }
+
+//   componentDidMount() {
+//     this.setState({
+//       valueThree: this.state.valueOne + this.state.valueTwo
+//     })
+//   }
+
+//   increaseValue = () => {
+//     this.setState({
+//       ...this.state,
+//       valueOne: this.state.valueOne + 1
+//     }, () => {
+//       this.setState({
+//         ...this.state,
+//         valueThree: this.state.valueOne + this.state.valueTwo
+//       })
+//     })
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <p>value 1 = {this.state.valueOne}</p>
+//         <p>value 2 = {this.state.valueTwo}</p>
+//         <p>value 3 = {this.state.valueThree}</p>
+//         <button onClick={this.increaseValue}>Increase</button>
+//       </div>
+//     )
+//   }
+// }
+
+
 
 export default App;
