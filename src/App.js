@@ -12,7 +12,7 @@ const App = () => {
 };
 // function increaseScore(state, props) {
 //   return { score: state.score + 1 }
-// }
+// }console.log('her')
 // class user {
 //   handleIncreaseScore() {
 //     this.setState(increaseScore)
