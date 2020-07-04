@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react'
 // import { Counter } from './features/counter/Counter';
-import TodoWithStatusObject from './components/todo/TodoWithStatus-object';
-import TodoWithStatusArray from './components/todo/TodoWithStatus-array';
-import ClassTodoWithoutStatusArray from './components/todo/ClassTodoWithoutStatus-array';
-import Counter from './components/Counter';
+import TodoWithStatusObject from './components/todo/TodoWithStatus-object'
+import TodoWithStatusArray from './components/todo/TodoWithStatus-array'
 
 const App = () => {
-  return (
-    <div>
-      <TodoWithStatusObject />
-      <TodoWithStatusArray />
-    </div>
-  )
+	return (
+		<div>
+			<TodoWithStatusObject />
+			<TodoWithStatusArray />
+		</div>
+	)
 }
 
 // function increaseScore(state, props) {
@@ -23,7 +21,6 @@ const App = () => {
 //     this.setState(increaseScore)
 //   }
 // }
-
 
 // class App extends React.Component {
 //   constructor() {
@@ -65,6 +62,4 @@ const App = () => {
 //   }
 // }
 
-
-
-export default App;
+export default App
