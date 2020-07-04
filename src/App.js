@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 // import { Counter } from './features/counter/Counter';
-import TodoWithStatusObject from './components/todo/TodoWithStatus-object'
-import TodoWithStatusArray from './components/todo/TodoWithStatus-array'
+import TodoWithStatusObject from './components/todo/TodoWithStatus-object';
+import TodoWithStatusArray from './components/todo/TodoWithStatus-array';
 
 const App = () => {
 	return (
@@ -9,19 +9,16 @@ const App = () => {
 			<TodoWithStatusObject />
 			<TodoWithStatusArray />
 		</div>
-	)
-}
-
+	);
+};
 // function increaseScore(state, props) {
 //   return { score: state.score + 1 }
 // }
-
 // class user {
 //   handleIncreaseScore() {
 //     this.setState(increaseScore)
 //   }
 // }
-
 // class App extends React.Component {
 //   constructor() {
 //     super()
@@ -31,13 +28,11 @@ const App = () => {
 //       valueThree: ''
 //     }
 //   }
-
 //   componentDidMount() {
 //     this.setState({
 //       valueThree: this.state.valueOne + this.state.valueTwo
 //     })
 //   }
-
 //   increaseValue = () => {
 //     this.setState({
 //       ...this.state,
@@ -49,7 +44,6 @@ const App = () => {
 //       })
 //     })
 //   }
-
 //   render() {
 //     return (
 //       <div>
@@ -61,5 +55,4 @@ const App = () => {
 //     )
 //   }
 // }
-
-export default App
+export default App;
