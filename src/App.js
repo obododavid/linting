@@ -1,6 +1,6 @@
-import React from "react";
-import TodoWithStatusObject from "./components/todo/TodoWithStatus-object";
-import TodoWithStatusArray from "./components/todo/TodoWithStatus-array";
+import React from "react"
+import TodoWithStatusObject from "./components/todo/TodoWithStatus-object"
+import TodoWithStatusArray from "./components/todo/TodoWithStatus-array"
 
 const App = () => {
 	return (
@@ -8,8 +8,8 @@ const App = () => {
 			<TodoWithStatusObject />
 			<TodoWithStatusArray />
 		</div>
-	);
-};
+	)
+}
 // function increaseScore(state, props) {
 //   return { score: state.score + 1 }
 // }console.log('her')
@@ -54,4 +54,4 @@ const App = () => {
 //     )
 //   }
 // }
-export default App;
+export default App
